@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Belajar HTML5</title>
+  <style>
+    /* ========== Reset ========== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f8fafc;
+      color: #1f2937;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 16px;
+    }
+
+    /* ========== Header & Nav ========== */
+    header {
+      background: linear-gradient(90deg, #0ea5a4, #3b82f6);
+      color: white;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 12px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 12px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 6px;
+      transition: 0.2s;
+    }
+
+    nav a:hover {
+      background: rgba(255,255,255,0.3);
+    }
+
+    /* ========== Artikel ========== */
+    article {
+      background: white;
+      padding: 16px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+    }
+
+    article h2 {
+      margin-bottom: 10px;
+      color: #0f172a;
+    }
+
+    article img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    /* ========== Tabel ========== */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    table th, table td {
+      border: 1px solid #e5e7eb;
+      padding: 10px;
+      text-align: left;
+    }
+
+    table th {
+      background: #3b82f6;
+      color: white;
+    }
+
+    table tr:nth-child(even) {
+      background: #f1f5f9;
+    }
+
+    /* ========== Form ========== */
+    form {
+      background: white;
+      padding: 16px;
+      border-radius: 10px;
+      margin: 20px 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+
+    form input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 12px;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+    }
+
+    form button {
+      padding: 10px 16px;
+      background: #2563eb;
+      border: none;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background: #1e40af;
+    }
+
+    /* ========== Media ========== */
+    section {
+      margin: 20px 0;
+      background: white;
+      padding: 16px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    section h2 {
+      margin-bottom: 10px;
+    }
+
+    video, audio {
+      margin-top: 10px;
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    /* ========== Footer ========== */
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      padding: 12px;
+      color: #475569;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1>Belajar HTML5</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Profil</a></li>
+          <li><a href="#">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Artikel dengan gambar -->
+    <article>
+      <h2>Perkenalan Diri</h2>
+      <p>Halo, nama saya Chernobyl. Saya Mahasiswa UNTAG SURABAYA yang sedang belajar HTML5 untuk membuat halaman web sederhana.</p>
+      <img src="chernobyl.jpeg" alt="Foto Mahasiswa">
+    </article>
+
+    <!-- Tabel Mata Kuliah -->
+    <section>
+      <h2>Daftar Mata Kuliah Semester 1</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Kode MK</th>
+            <th>Nama Mata Kuliah</th>
+            <th>SKS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>14624033</td>
+            <td>ALGORITMA</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>14624062/td>
+            <td>PEMROGRAMAN WEB</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>14624052</td>
+            <td>PENGANTAR INFORMATIKA</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>14624043</td>
+            <td>SISTEM DIGITAL</td>
+            <td>3</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Form Pendaftaran -->
+    <form>
+      <h2>Formulir Pendaftaran Mahasiswa Baru</h2>
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <button type="submit">Kirim</button>
+    </form>
+
+    <!-- Audio -->
+    <section>
+      <h2>Audio Musik</h2>
+      <audio controls>
+        <source src="Barasuara - Terbuang Dalam Waktu (Official Video).mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung pemutar audio.
+      </audio>
+    </section>
+
+    <!-- Video -->
+    <section>
+      <h2>Video Pembelajaran</h2>
+      <video controls>
+        <source src="Belajar HTML Dari Nol Sampai Mahir _ Untuk Pemula _ Membuat, Menyimpan Dan Menjalankan HTML.mp4" type="video/mp4">
+        Browser Anda tidak mendukung pemutar video.
+      </video>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>Copyright 2025</p>
+    </footer>
+  </div>
+</body>
+</html>
+
